@@ -1,0 +1,24 @@
+{
+  "name": "org-to-json",
+  "version": "1.0.0",
+  "description": "Converts org to json",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzekielSuresh/org-to-json"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EzekielSuresh/org-to-json/issues"
+  },
+  "homepage": "https://github.com/EzekielSuresh/org-to-json#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
