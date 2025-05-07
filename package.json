@@ -2,25 +2,45 @@
   "name": "org-to-json",
   "version": "1.0.0",
   "description": "Converts org to json",
+  "keywords": [
+    "org",
+    "json",
+    "emacs"
+  ],
   "main": "dist/index.js",
-  "types": "dist/index.test.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "test": "ts-node test/index.test.ts",
-    "build": "tsc"
+    "build": "tsup",
+    "check-exports": "attw --pack .",
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EzekielSuresh/org-to-json"
   },
-  "author": "",
+  "author": "Ezekiel Suresh Murali",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EzekielSuresh/org-to-json/issues"
   },
   "homepage": "https://github.com/EzekielSuresh/org-to-json#readme",
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.0",
     "@types/node": "^22.15.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
   }
 }
