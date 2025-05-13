@@ -6,7 +6,7 @@
 
 - **tree-structure**: outputs a hierarchical JSON preserving original structure
 - **accurate**: supports nested headings with correct level of depth
-- **todo-states**: captures `TODO`, `DONE` and 7 other states
+- **todo-keywords**: captures `TODO`, `DONE` and 7 other keywords
 - **timestamps**: extracts both `SCHEDULED` and `DEADLINE` timestamps
 - **type-safe**: written in Typescript with full type definitions for easy integration
 
@@ -18,8 +18,6 @@ npm install org-to-json
 ```
 
 ## Usage
-
-### How to use?
 
 ```typescript
 import { parseOrg } from "org-to-json";
